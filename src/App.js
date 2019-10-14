@@ -1,24 +1,23 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Region from './Components/Region';
 
 function App() {
+  const regions = [
+    {name: "africa", key: 1 },
+    {name: "americas", key: 2 },
+    {name: "asia", key: 3 },
+    {name: "europe", key: 4 },
+    {name: "oceania", key: 5 }
+  ];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <h1>RESTful Country Data</h1>
+        <ul className="region-list">
+          {regions.map(region => {
+            return <Region key={region.key} region={region.name} />;
+          })}
+        </ul>
     </div>
   );
 }
