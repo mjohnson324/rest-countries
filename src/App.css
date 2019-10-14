@@ -1,22 +1,67 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
+  background-color: #fcfcfc;
   min-height: 100vh;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: #a50404;
+}
+
+h1 {
+  font-size: 40px;
+  text-align: center;
+  margin: 30px;
+}
+
+.region-list {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.region {
+  border: 1px solid black;
+  border-radius: 30px;
+  margin: 20px 20px 10px 0;
+  list-style-type: none;
+  width: 700px;
+}
+
+.region-title {
+  text-align: center;
+  font-size: 30px;
+  margin: 10px;
+}
+
+.country {
+  border: 1px dotted black;
+  margin: 20px 20px 10px 0;
+  border-radius: 10px;
+}
+
+.country-title {
+  font-size: 24px;
+  margin: 10px;
+}
+
+.country-data {
+  font-size: 16px;
+  margin: 10px 10px 10px 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.visible {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .region {
+    width: 90vw;
+  }
 }
