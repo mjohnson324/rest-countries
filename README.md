@@ -11,6 +11,9 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 * To update the production build: `npm run build`
 * To run the test suite: `npm test`
 
-## Next Steps
+## Component Hierarchy
 
-* [ ] Add sorting functionality. Sort countries by name and population density (population / area)
+* App
+  * Region
+    * Country
+      * CountryData
