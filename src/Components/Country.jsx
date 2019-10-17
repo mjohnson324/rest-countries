@@ -1,6 +1,5 @@
 import React from 'react';
 import CountryData from './CountryData';
-import { checkHidden } from './utility';
 
 class Country extends React.Component {
     constructor(props) {
@@ -22,7 +21,7 @@ class Country extends React.Component {
         const data = this.props.data;
         return(
             <li
-                className={`country ${checkHidden(this.props.hidden)}`}
+                className="country"
                 onClick={this.toggleDisplay}>
                 <h3 className="country-title">{data.name}</h3>
                 <CountryData data={data} hidden={this.state.hidden} />
