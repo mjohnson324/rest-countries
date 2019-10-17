@@ -1,4 +1,4 @@
-# Geo-Zoom-Frontend
+# REST Countries
 
 A frontend application for displaying data from [REST Countries](restcountries.eu).
 

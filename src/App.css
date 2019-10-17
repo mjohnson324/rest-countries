@@ -3,7 +3,6 @@
   min-height: 100vh;
   font-size: calc(10px + 2vmin);
   color: black;
-  background-color: white;
 }
 
 h1 {
@@ -43,7 +42,7 @@ h1 {
   background-color: white;
 }
 
-.country-title {
+.country-title, .sort-title {
   font-size: 24px;
   margin: 10px;
 }

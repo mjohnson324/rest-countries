@@ -70,7 +70,7 @@ class Region extends React.Component {
                 <h2 className="region-title">
                     {name[0].toUpperCase() + name.slice(1)}
                 </h2>
-                <h3 className={`${checkHidden(hidden)}`}>
+                <h3 className={`sort-title ${checkHidden(hidden)}`}>
                     Sort countries by:
                 </h3>
                 <div className="sort-buttons">
